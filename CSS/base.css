@@ -1,0 +1,338 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?uue2eb');
+  src:  url('../fonts/icomoon.eot?uue2eb#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?uue2eb') format('truetype'),
+    url('../fonts/icomoon.woff?uue2eb') format('woff'),
+    url('../fonts/icomoon.svg?uue2eb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* 头部和底部样式布局相同 */
+.w{			/* 版心的公共类 */
+	width: 1190px;
+	margin: 0 auto;
+	position: relative;
+	/* border: 1px solid red; */
+}
+.fl{		/* 浮动的公共类 */
+	float: left;
+}
+.fr{
+	float: right;
+}
+img{
+	display: block;
+}
+ul, h1, p, input, button, dl, dt, dd, h5, img, a, div {
+	margin: 0;
+	padding: 0;
+}
+input,button{
+	border: 0;
+	outline: none;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #999;
+}
+a:hover{
+	color: #e33333;
+}
+body{
+	background: #f4f4f4;
+	font-size: 12px;
+}
+
+.f10{
+	color: #f10215;
+}
+
+/* 快速导航栏 */
+.shortcut{
+	background: #e3e4e5;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ddd;
+}
+.shortcut i{
+	font-family: icomoon;
+	font-style: normal;
+}
+.shortcut .shortcut-nve li{
+	float: left;
+}
+.shortcut .shortcut-nve .space{
+	width: 1px;
+	height: 10px;
+	margin: 10px 12px;
+	background: #ccc;
+}
+/* 手机京东 */
+.shortcut .shortcut-nve .mobile{
+	position: relative;
+}
+.shortcut .shortcut-nve .mobile img{
+	position: absolute;
+	left: -12px;
+	top: 24px;
+	border: 1px solid #ccc;
+	padding: 3px;
+	box-shadow: 1px 1px 10px rgba(0,0,0,.2);
+}
+/* header */
+header{
+	height: 140px;
+	background: #fff;
+	/* border: 1px solid black; */
+}
+header .w{
+	height: 140px;
+}
+/* logo */
+.logo a{
+	display: block;
+	width: 190px;
+	height: 120px;
+	background: url(../images/logo.png) no-repeat;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+}
+/* 搜索框 */
+.form{
+	width: 550px;
+	height: 35px;
+	border: 1px solid red;
+	position: absolute;
+	top: 25px;
+	left: 260px;
+}
+.form input{
+	width: 488px;
+	height: 33px;
+	float: left;
+	border: 1px solid #F10215;
+	padding-left: 10px;
+	font-size: 12px;
+	color: #989898;
+}
+.form button{
+	width: 50px;
+	height: 35px;
+	float: left;
+	background: #F10215;
+}
+.form button i{
+	font-family: icomoon;
+	font-style: normal;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+/* 关键词 */
+.hotwords{
+	/* border: 1px solid red; */
+	width: 550px;
+	height: 12px;
+	position: absolute;
+	top: 68px;
+	left: 260px;
+}
+/* 购物车 */
+.shop-cart{
+	border: 2px solid #EEEEEE;
+	width: 130px;
+	height: 33px;
+	line-height: 33px;
+	position: absolute;
+	top: 25px;
+	right: 230px;
+	text-align: center;
+}
+.shop-cart a{
+	color: #F10215;
+}
+.shop-cart i{
+	font-family: icomoon;
+	margin-right: 1.5em;
+	font-style: normal;
+}
+/* 秒杀 */
+.killsec{
+	/* border: 1px solid red; */
+	width: 770px;
+	height: 35px;
+	position: absolute;
+	bottom: 0;
+	left: 220px;
+	line-height: 35px;
+}
+.killsec li{
+	float: left;
+}
+.killsec li a:hover{
+	color: #F10215;
+}
+.killsec li a{
+	font-size: 16px;
+	font-weight: 500;
+	color: #555555;
+	margin-right: 1.2em;
+}
+/* header end */
+
+
+.body{
+	height: 200px;
+	background: green;
+}
+
+
+
+/* footer */
+footer{
+	height: 500px;
+	background: #eaeaea;
+	margin-top: 10px;
+}
+
+/* 服务模块 */
+.service{
+	padding: 30px 0;
+	border-bottom: 1px solid #dedede;
+	overflow: hidden;
+}
+.service ul li{
+	width: 297px;
+	height: 43px;
+	line-height: 43px;
+	/* background: purple; */
+	position: relative;
+	font-size: 18px;
+	float: left;
+}
+.service ul li h5{
+	/* background: grey; */
+	width: 36px;
+	height: 43px;
+	position: absolute;
+	top: 0;
+	left: 38px;
+	text-align: center;background: url(../images/ico_service.png) no-repeat;
+	text-indent: -9999px;		/* 缩进 */
+}
+.service ul li:nth-child(2) h5{
+	background-position: 0 -43px;
+}
+.service ul li:nth-child(3) h5{
+	background-position: 0 -86px;
+}
+.service ul li:nth-child(4) h5{
+	background-position:bottom;
+}
+.service ul li p{
+	font-weight: 700;
+	margin-left: 102px;
+}
+
+/* 帮助模块 */
+.help{
+	height: 200px;
+	border-bottom: 1px solid #dedede;
+	padding-top: 25px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.help dl{
+	width: 192px;
+	float: left;
+}
+.help dt{
+	height: 30px;
+	font-size: 14px;
+	color: #666;
+}
+.help dd{
+	height: 22px;
+	color: #666;
+}
+
+/* 范围 */
+.coverage{
+	width: 200px;
+	height: 150px;
+	background: url(../images/china.png) no-repeat;
+	position: relative;
+}
+.coverage h5{
+	display: block;
+	font-size: 14px;
+	color: #666;
+	margin-top: 10px;
+	text-align: center;
+}
+.coverage p{
+	display: block;
+	line-height: 18px;
+	font-size: 12px;
+	color: #666666;
+	margin-top: 1.5em;
+}
+.coverage a:hover{
+	color: #F10215;
+}
+.coverage a{
+	font-size: 13px;
+	color: #666666;
+	position: absolute;
+	right: 0;
+}
+
+/* 版权模块 */
+.copyright{
+	padding-top: 20px;
+	color: #666666;
+	text-align: center;
+	font-size: 12px;
+}
+.copyright a{
+	color: #666666;
+}
+.copyright span{
+	margin: 0 10px;
+}
+.copyright .filing p{
+	display: block;
+	margin-top: 20px;
+	line-height: 22px;
+}
+
+.foot-icon{
+	display: block;
+}
+.foot-icon a{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	background: url(../images/china.png) no-repeat;
+	background-position: -206px 0px;
+	text-align: center;
+}
+.foot-icon a:nth-child(2){
+	background-position:-206px -75px  ;
+}
+.foot-icon a:nth-child(3){
+	background-position:-206px -38px ;
+}
+.foot-icon a:nth-child(4){
+	background-position:-206px 0 ;
+}
+.foot-icon a:nth-child(5){
+	background-position:0 -156px ;
+}
